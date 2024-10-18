@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>AI & ML Department Overview - Lokmanya Tilak College of Engineering</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#000000" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="HomePage.css" />
+    <link rel="stylesheet" type="text/css" href="index.css" />
+    <link rel="stylesheet" type="text/css" href="font.css" />
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <link rel="stylesheet" type="text/css" href="components.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.1/aos.css" />
+    <style>
+        .counter-number {
+            font-size: 2rem;
+            color: #00aaff; /* Customize as needed */
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="home-page">
+            <div class="header-container">
+                <div class="logo">
+                    <img src="Images/ltce logo.jpg" alt="College Logo">
+                </div>
+                <div class="toggle" id="toggle">&#9776;</div> <!-- Hamburger icon -->
+                <div class="nav" id="nav-links">
+                    <button class="nav-button" onclick="smoothScroll('#Home')">Home</button>
+                    <div class="dropdown">
+                        <a href="../About Page/About.html"><button class="nav-button" onclick="smoothScroll('#About')">About</button></a>
+                        <div class="dropdown-content">
+                            <a href="../Faculty Page/HOD Desk/HOD.html"><i class="fas fa-user-tie"></i> HOD Desk</a>
+                            <a href="../Faculty Page/Teaching Staff/Teaching.html"><i class="fas fa-chalkboard-teacher"></i> Faculty Details</a>
+                            <a href="../Faculty Page/Non Teaching Staff/NonTeaching.html"><i class="fas fa-users"></i> Non-Faculty Details</a>
+                        </div>
+                    </div>
+                    <button class="nav-button" onclick="smoothScroll('#Achievements')">Achievements</button>
+                    <div class="dropdown">
+                        <button class="nav-button" onclick="smoothScroll('#Club')">Club</button>
+                        <div class="dropdown-content">
+                            <a href="members.html"><i class="fas fa-users"></i> Members</a>
+                            <a href="Events.html"><i class="fas fa-calendar"></i> Events</a>  
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="marquee2-container">
+        <marquee>WELCOME TO THE DEPARTMENT OF COMPUTER SCIENCE & ENGINEERING (ARTIFICIAL INTELLIGENCE & MACHINE LEARNING)</marquee>
+    </div>
+    <!-- Main Content -->
+    <div class="container">
+        <!-- Video section -->
+        <div class="row">
+            <div class="video-container">
+                <video autoplay muted loop>
+                    <source src="./WElCOME TO AIML DEPARTMENT.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <div class="overlay">Play Video</div>
+            </div>
+        </div>
+
+        <!-- Announcements section -->
+        <div class="desktop6">
+            <div class="announcement-container">
+                <div class="announcement-icon">
+                    <i class="fas fa-bullhorn"></i>
+                </div>
+                <div class="announcement-text">
+                    <marquee behavior="scroll" direction="left" scrollamount="6" onmouseover="this.stop();" onmouseout="this.start();">
+                        AI & ML Club Notice: Project submission deadline extended
+                    </marquee>
+                </div>
+            </div>            
+            <div class="main">
+                <div class="notice-bar">
+                    <h2><i class="fas fa-newspaper"></i> Latest News</h2>
+                    <ul class="news-items">
+                        <li>Project submission deadline extended</li>
+                        <li>New course on AI announced</li>
+                        <li>Departmental seminar on ML</li>
+                        <li>Online hackathon registration open</li>
+                    </ul>
+                </div>
+                <div class="notice-bar">
+                    <h2>Notice</h2>
+                    <ul class="news-items">
+                        <li>Project submission deadline extended</li>
+                        <li>New course on AI announced</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Top Recruiters Section -->
+        <div class="recruiters-section">
+            <h5>Top Recruiters</h5>
+            <div class="marquee-container1">
+                <div class="marquee1" id="marquee1">
+                    <img class="slide" src="./Images/jio.jpg" alt="Recruiter 1">
+                    <img class="slide" src="./Images/adobeLogo.jpg" alt="Recruiter 2">
+                    <img class="slide" src="./Images/27.png" alt="Recruiter 3">
+                    <img class="slide" src="./Images/wipro.jpg" alt="Recruiter 4">
+                    <img class="slide" src="./Images/texhMahindra.jpg" alt="Recruiter 5">
+                    <img class="slide" src="./Images/images.png" alt="Recruiter 6">
+                    <img class="slide" src="./Images/0eb9db531aa88ba4adff5138e38c1972.jpg" alt="Recruiter 7">
+                    <img class="slide" src="./Images/tcsLogo.jpg" alt="Recruiter 8">
+                </div>
+            </div>
+        </div>
+
+        <!-- Statistics Section -->
+        <section class="section section-work-data" data-aos="fade-up">
+            <h1>Student Statistics</h1>
+            <div class="container grid grid-four-column">
+                <div class="data-card" data-aos="fade-up">
+                    <i class="fas fa-users icon" title="Total Students"></i>
+                    <h2 class="counter-title">Total Number of Students</h2>
+                    <p class="counter-number" id="totalStudents">0</p>
+                    <div class="progress-bar" style="width: 70%;"></div>
+                </div>
+                <div class="data-card" data-aos="fade-up" data-aos-delay="100">
+                    <i class="fas fa-user-graduate icon" title="First Year (FE)"></i>
+                    <h2 class="counter-title">First Year (FE)</h2>
+                    <p class="counter-number" id="firstYear">0</p>
+                    <div class="progress-bar" style="width: 50%;"></div>
+                </div>
+                <div class="data-card" data-aos="fade-up" data-aos-delay="200">
+                    <i class="fas fa-user-graduate icon" title="Second Year (SE)"></i>
+                    <h2 class="counter-title">Second Year (SE)</h2>
+                    <p class="counter-number" id="secondYear">0</p>
+                    <div class="progress-bar" style="width: 60%;"></div>
+                </div>
+                <div class="data-card" data-aos="fade-up" data-aos-delay="300">
+                    <i class="fas fa-user-graduate icon" title="Third Year (TE)"></i>
+                    <h2 class="counter-title">Third Year (TE)</h2>
+                    <p class="counter-number" id="thirdYear">0</p>
+                    <div class="progress-bar" style="width: 40%;"></div>
+                </div>
+                <div class="data-card" data-aos="fade-up" data-aos-delay="400">
+                    <i class="fas fa-user-graduate icon" title="Fourth Year (BE)"></i>
+                    <h2 class="counter-title">Fourth Year (BE)</h2>
+                    <p class="counter-number" id="fourthYear">0</p>
+                    <div class="progress-bar" style="width: 30%;"></div>
+                </div>
+            </div>
+        </section>
+        <section class="carousel-section" id="Club">
+            <div class="container">
+              <h2 class="section-title">AI/ML Club Event Highlights</h2>
+              <div class="carousel" id="eventCarousel">
+                <div class="carousel-slides" id="carouselSlide">
+                  <!-- Event slides will be injected here dynamically -->
+                </div>
+                <button class="prev-btn" id="prevBtn">&#10094;</button>
+                <button class="next-btn" id="nextBtn">&#10095;</button>
+              </div>
+            </div>
+        </section>
+
+    <div class="column_four">
+        <div class="location container-xs">
+            <h2 class="location_title ui heading size-headinglg">GOOGLE MAP LOCATION</h2>
+            <div class="location_address-container">
+                <div class="location_map-container">
+                    <div class="location_map">
+                        <iframe class="actAsDiv" src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;q=Lokmanya%20Tilak%20College%20Of%20EngineeringKopar%20Khairane%2C%20Sector%204%2C%20Vikas%20Nagar%2C%20Navi%20Mumbai%2C%20Maharashtra%20&amp;aq=0&amp;ie=UTF8&amp;t=m&amp;z=12&amp;iwloc=A&amp;output=embed"></iframe>
+                    </div>
+                </div>
+                <div class="location_address-details">
+                    <h3 class="column-description_title ui heading size-headingmd">ADDRESS:</h3>
+                    <h4 class="location_address-description ui heading size-textmd">
+                        C-Building, 4th Floor, LOKMANYA TILAK <br />COLLEGE OF ENGINEERING, SECTOR 4, <br />VIKAS NAGAR, <br />KOPARKHAIRANE, <br />NAVI MUMBAI, MAHARASHTRA, INDIA, 400709
+                    </h4>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-content">
+            <!-- Footer Left Section -->
+            <div class="footer-left">
+                <img src="logo.png" alt="College Logo" class="college-logo">
+                <p>Let's connect with our socials</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+                <div class="contact">
+                    <p><strong>Contact Us</strong></p>
+                    <p>+91-022-27541005</p>
+                    <p>+91-022-27541006</p>
+                    <p>principal@ltce.in</p>
+                    <p>principal.ltce@gmail.com</p>
+                </div>
+            </div>
+    
+            <!-- Footer Middle Section -->
+            <div class="footer-middle">
+                <ul>
+                    <li><strong>HOME</strong></li>
+                    <li><a href="#">ABOUT</a></li>
+                    <li><a href="#">ACHIEVEMENTS</a></li>
+                    <li><a href="#">CLUB INFO</a></li>
+                    <li><a href="#">NEWS</a></li>
+                    <li><a href="#">FACULTY</a></li>
+                    <li><a href="#">TNP</a></li>
+                    <li><a href="#">ERP</a></li>
+                </ul>
+            </div>
+    
+            <!-- Footer Right Section -->
+            <div class="footer-right">
+                <p><strong>DESIGNED AND DEVELOPED BY</strong></p>
+                <p><i class="fas fa-user"></i> Aditya Bhosale</p>
+                <p><i class="fas fa-user"></i> Hrishikesh Dongre</p>
+                <p><i class="fas fa-user"></i> Pratham Harer</p>
+                <p><i class="fas fa-user"></i> Pranay Bhoir</p>
+                <br>
+                <p><strong>UNDER GUIDANCE OF</strong></p>
+                <p><i class="fas fa-user"></i> Prof. Ashwini Pawar</p>
+            </div>
+        </div>
+    
+        <!-- Footer Bottom Section -->
+        <div class="footer-bottom">
+            <p>&copy; 2024 Lokmanya Tilak College of Engineering. All rights reserved.</p>
+            <p>ALL RIGHTS RESERVED.</p>
+        </div>
+    </footer>
+    <!-- JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.1/aos.js"></script>
+    <script src="script.js" defer></script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

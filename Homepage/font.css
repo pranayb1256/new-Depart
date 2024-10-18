@@ -1,0 +1,28 @@
+@font-face {
+  font-display: swap;
+  font-style: normal;
+  src: url("Inter/static/Inter_18pt-Bold.ttf");
+  font-family: "Inter";
+  font-weight: 700;
+}
+@font-face {
+  font-display: swap;
+  font-style: normal;
+  src: url("Inter/static/Inter_18pt-Regular.ttf");
+  font-family: "Inter";
+  font-weight: 400;
+}
+@font-face {
+  font-display: swap;
+  font-style: normal;
+  src: url("Inter/static/Inter_18pt-Medium.ttf");
+  font-family: "Inter";
+  font-weight: 500;
+}
+@font-face {
+  font-display: swap;
+  font-style: normal;
+  src: url("Inter/static/Inter_18pt-SemiBold.ttf");
+  font-family: "Inter";
+  font-weight: 600;
+}
